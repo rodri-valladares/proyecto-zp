@@ -1,0 +1,19 @@
+{
+  "name": "maqueta",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "dev": "nodemon src/app.js"
+  },
+  "author": "Rodrigo Valladares",
+  "license": "ISC",
+  "dependencies": {
+    "ejs-mate": "^3.0.0",
+    "express": "^4.17.1",
+    "socket.io": "^3.0.5"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}
