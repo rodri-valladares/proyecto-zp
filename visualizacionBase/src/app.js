@@ -1,5 +1,6 @@
 const express = require("express");
 const engine=require('ejs-mate');
+const path = require('path');
 
 //initializations
 var app = express();
@@ -9,9 +10,7 @@ app.engine('ejs', engine);
 app.set('view engine', 'ejs');
 
 //RUTAS
-app.get('/', (req,res)=>{
-  res.render('index');
-});
+app.use(require('./routes/'));
 
 // starting the server
 app.listen(3000, ()=>{
